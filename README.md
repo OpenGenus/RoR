@@ -1,6 +1,6 @@
 # basic rails app
 
-> This simple web application is a tutorial on Basic ruby on rails web app. It has a single static web page which demonstrates the basics of creating a Rails app.
+    > This simple web application is part of my [OpenGenus](https://iq.opengenus.org/) internship where I was required to do a tutorial on Basic ruby on rails web app. It has a single static web page which demonstrates the basics of creating a Rails app.
 
 
 ## Built With
@@ -60,7 +60,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Inspiration
-- etc
+- [OpenGenus](https://iq.opengenus.org/) for giving me this project idea for my internship
 
 ## 📝 License
 
