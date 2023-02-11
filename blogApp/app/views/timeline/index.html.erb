@@ -1,2 +1,23 @@
-<h1>Timeline#index</h1>
-<p>Find me in app/views/timeline/view.html.erb</p>
+<h1>Click Timeline</h1>
+
+<div class="table-container">
+<table class="table">
+        <tr>
+        <th >Created at</th>
+        <th>Updated at</th>
+        <th>Action</th>
+        </tr>
+    
+    <tbody>
+        <% @clicktimeline.each do |timeline| %>
+        <tr>
+            <td><%= timeline.created_at %></td>
+            <td><%= timeline.updated_at %></td>
+            <td><button>Delete</button></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+</div>
+
+
