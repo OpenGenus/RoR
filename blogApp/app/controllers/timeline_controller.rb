@@ -1,8 +1,18 @@
 class TimelineController < ApplicationController
-  def create
-    @clicktimeline = ClickTimeline.new
+  def index
+    @clicktimeline = ClickTimeline.all
   end
 
-  def view
+  def new
+    @clicktimeline = ClickTimeline.new
+
   end
+
+  def create
+    @clicktimeline = ClickTimeline.new
+    if @clicktimeline.save
+    redirect_to root_path
+    end
+  end
+
 end
