@@ -2,6 +2,7 @@
 
 <div class="table-container">
 <button><%= link_to 'Create New Timeline', new_timeline_path %></button>
+<p>Total Number: <%= @counttimelines %></p>
 <table class="table">
         <tr>
         <th >Created at</th>
@@ -14,8 +15,7 @@
         <tr>
             <td><%= timeline.created_at %></td>
             <td><%= timeline.updated_at %></td>
-            <td><%= link_to 'Delete', timeline_path(timeline), method: :delete, data: {turbo: false} %></td>
-                    
+            <td><%= link_to 'Delete', timeline_path(timeline), method: :delete, data: {turbo: false} %></td>    
         </tr>
         <% end %>
     </tbody>

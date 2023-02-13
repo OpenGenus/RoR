@@ -1,6 +1,7 @@
 class TimelinesController < ApplicationController
   def index
     @clicktimelines = ClickTimeline.all
+    @counttimelines = ClickTimeline.all.count
   end
 
   def new
