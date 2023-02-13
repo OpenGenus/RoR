@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  root "timeline#index"
-  get 'timeline', to: 'timeline#index'
-  post 'timeline', to: 'timeline#create'
-  get 'timeline/new', to: 'timeline#new', as: 'new_timeline'
-
+  root "timelines#index"
+  get 'timelines', to: 'timelines#index'
+  get '/timelines/:id', to: 'timelines#destroy'
+  post 'timelines', to: 'timelines#create'
+  delete '/timelines/:id', to: 'timelines#destroy', as: 'timeline'
+  get '/timelines/new', to: 'timelines#new', as: 'new_timeline'
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
