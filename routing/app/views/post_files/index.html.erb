@@ -1,0 +1,6 @@
+<h1>Post Files</h1>
+
+ <%= image_tag @post_files.image, alt: "user profile" %>
+
+<p><%= link_to 'View pdf file', post_post_file_path(@post.id, @post_files.pdf)  %></p>
+
